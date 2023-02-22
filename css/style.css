@@ -33,6 +33,10 @@ body{
 .mb-20{
     margin-bottom: 20px;
 }
+
+.ml-10{
+    margin-left: 10px;
+}
 /* LAYOUT */
 .mc-wrapper{
     width: 100%;
@@ -60,9 +64,15 @@ a{
 .nav-left{
     width: 200px;
     height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
     /* debug */
     /* border: 1px solid blue; */
     background-color: black;
+}
+
+.upper-part{
+    width: 100%;
 }
 /* logo */
 .logo{
@@ -77,6 +87,10 @@ a{
 .menu{
     align-items: center;
     padding: 5px;
+}
+
+.menu.home{
+    border-left: 2px solid #adff2f;
 }
 .menu img{
     width: 25px;
@@ -97,6 +111,9 @@ a{
     color: #717171;
     margin-bottom: 10px;
 }
+.crea-playlist span{
+    vertical-align: 8px;
+}
 .crea-playlist i{
     color: #a3a3a3;
     font-size: 2rem;
@@ -105,6 +122,7 @@ a{
 /* bottom */
 .bottom{
     padding: 5px;
+    margin: 0 10px;
 }
 .download{
     color: #717171;
@@ -117,7 +135,7 @@ a{
     padding-right: 3px;
 }
 
-hr{
+.bottom hr{
     color: #717171;
 }
 
@@ -143,20 +161,67 @@ hr{
     overflow-y: auto;
     /* debug */
     /* border: 1px solid brown; */
-    background-color: brown;
+    background-color: #141922;
+}
+
+/* header */
+.header{
+    background-color: rgba(0, 0, 0, 0.4);
+    width: calc(100% - 200px);
+    height: 100px;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 5px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 999;
+}
+
+.header a{
+    color: white;
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 10px 50px;
+}
+
+/* main content */
+.main-content{
+    margin-top: 110px;
+}
+.main-content ul{
+    justify-content: center;
+    gap: 10px;
+}
+
+.main-content a,
+.main-content p{
+    color: #717171;
+}
+
+.main-content hr{
+    margin: 0 auto;
+    width: 40%;
+    color: #adff2f;
+}
+
+.main-content h2,
+.main-content h4{
+    color: white;
+}
+
+.card h4,
+.card p{
+    text-align: center;
 }
 
 .recently{
     gap: 10px;
 }
+
 .card{
-    width: calc(100% / 6 - 10px);
-}
-/* header */
-.header{
-    background-color: rgba(0, 0, 0, 0.4);
-    /* debug */
-    height: 40px;
+    width: calc(100% / 6 - 20px);
+    margin-left: 10px;
 }
 /* player */
 .player{
