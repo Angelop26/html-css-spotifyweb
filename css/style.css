@@ -14,3 +14,95 @@ body{
     font-family: 'PT Sans', sans-serif;
 }
 
+/* COMMON */
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.img{
+    width: calc(100%);
+    /* height: 100px; */
+    /* margin: 10px; */
+    /* debug */
+    background-color: cornflowerblue;
+}
+
+/* LAYOUT */
+.mc-wrapper{
+    width: 100%;
+    height: 100vh;
+}
+
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* container */
+.container{
+    width: 100%;
+    height: calc(100% - 100px);
+    /* debug */
+    /* border: 1px solid yellow; */
+    background-color: yellow;
+}
+
+/* NAV LEFT */
+.nav-left{
+    width: 150px;
+    height: 100%;
+    /* debug */
+    /* border: 1px solid blue; */
+    background-color: blue;
+}
+
+/* CONTENT */
+.content{
+    width: calc(100% - 150px);
+    height: 100%;
+    overflow-y: auto;
+    /* debug */
+    /* border: 1px solid brown; */
+    background-color: brown;
+}
+
+.recently{
+    gap: 10px;
+}
+.card{
+    width: calc(100% / 6 - 10px);
+}
+/* header */
+.header{
+    background-color: rgba(0, 0, 0, 0.4);
+    /* debug */
+    height: 40px;
+}
+/* player */
+.player{
+    width: 100%;
+    height: 100px;
+    /* debug */
+    /* border: 1px solid aquamarine; */
+    background-color: aquamarine;
+}
+
+.section{
+    height: 100%;
+}
+.left,
+.right{
+    width: 150px;
+    /* debug */
+    background-color: chartreuse;
+}
+
+.md{
+    width: calc(100% - 300px);
+    /* debug */
+    background-color: darkgoldenrod;
+}
