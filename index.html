@@ -16,6 +16,10 @@
     
     <!-- link responsive css -->
     <link rel="stylesheet" href="css/responsive.css">
+
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 <body>
     <div class="mc-wrapper">
@@ -24,23 +28,48 @@
 
             <!-- navigation bar -->
             <div class="nav-left">
-                <div class="logo"></div>
-                <ul>
-                    <li>home</li>
-                    <li>cerca</li>
-                    <li>latua libreria</li>
-                </ul>
-                <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
-                <div class="bottom"></div>
+                <div class="logo">
+                    <img class="logo-big" src="img/logo.svg" alt="logo spotify">
+                    <img class="logo-small" src="img/logo-small.svg" alt="logo-small">
+                </div>
+                <div class="menu flex">
+                    <img src="img/home.svg" alt="">
+                    <div class="menu-text">Home</div>
+                </div>
+                <div class="menu flex">
+                    <img src="img/search.svg" alt="">
+                    <div class="menu-text">Cerca</div>
+                </div>
+                    <div class="menu mb-20 flex">
+                    <img src="img/libreria.svg" alt="">
+                    <div class="menu-text">La tua libreria</div>
+                </div>
+                <div class="playlist">
+                    <h4 class="mb-10">PLAYLIST</h4>
+                    <ul>
+                        <li class="crea-playlist">
+                            <i class="fa-sharp fa-solid fa-square-plus"></i> Crea Playlist
+                        </li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                    </ul>
+                </div>
+                <div class="bottom">
+                    <div class="download flex">
+                        <img src="img/download.svg" alt="">
+                        <p>Installa app</p>
+                    </div>
+                    <hr>
+                    <div class="profile flex">
+                        <img src="img/profile.svg" alt="">
+                        <h4>John Doe</h4> 
+                    </div>
+                </div>
             </div>
             <!-- /navigation bar -->
 

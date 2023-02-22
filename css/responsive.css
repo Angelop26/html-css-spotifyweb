@@ -11,14 +11,45 @@
 }
 
 @media screen and (max-width: 600px) {
+    /* navigation left */
     .nav-left{
         width: 50px;
     }
 
+    .logo{
+        text-align: center;
+        padding: 10px;
+    }
+    .logo-big{
+        display: none;
+    }
+
+    .logo-small{
+        display: block;
+    }
+
+    .menu-text,
+    .playlist,
+    .download p,
+    hr,
+    .profile h4{
+        display: none;
+    }
+
+    .menu img,
+    .profile img{
+     margin: 5px;
+    }
+
+   .download img{
+    margin: 5px 0 5px 10px;
+   }
+    /* content */
     .content{
         width: calc(100% - 50px);
     }
 
+    /* bottom */
     .left,
     .md,
     .right{
