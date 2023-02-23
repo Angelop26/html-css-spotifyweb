@@ -99,8 +99,12 @@ a{
 .menu img{
     width: 25px;
 }
-.menu-text{
+.home .menu-text a{
     color: white;
+}
+
+.menu-text a{
+    color: #717171;
 }
 
 /* playlist */
@@ -112,13 +116,15 @@ a{
     color: white;
 }
 .playlist li{
-    color: #717171;
     margin-bottom: 10px;
+}
+.playlist li a{
+    color: #717171;
 }
 .crea-playlist span{
     vertical-align: 8px;
 }
-.crea-playlist i{
+.crea-playlist a i{
     color: #a3a3a3;
     font-size: 2rem;
 }
@@ -187,6 +193,7 @@ a{
     border: 1px solid white;
     border-radius: 20px;
     padding: 10px 50px;
+    margin-right: 25px;
 }
 
 /* main content */
@@ -227,6 +234,10 @@ a{
     width: calc(100% / 6 - 20px);
     margin-left: 10px;
 }
+
+.card .img i{
+    display: none;
+}
 /* player */
 .player{
     width: 100%;
@@ -261,6 +272,7 @@ a{
 }
 
 .white-part{
+    position: relative;
     width: 30%;
     background-color: white;
     height: 100%;
@@ -268,8 +280,10 @@ a{
 }
 
 .button{
-    position: relative;
-    right: 100%;
+    display: none;
+    color: white;
+    position: absolute;
+    right: 0;
 }
 /* left section */
 .left{
@@ -295,7 +309,6 @@ a{
     padding: 10px;
 }
 
-
 /* md section */
 .entity{
     justify-content: center;
@@ -314,6 +327,10 @@ a{
     width: 50%;
     /* margin: 0 auto; */
 }
+
+.time .button{
+    top: -8px;
+}
 /* right section */
 .right{
     align-items: center;
@@ -324,4 +341,56 @@ a{
 
 .sound{
     width: 50%;
+}
+
+.sound .button{
+    top: -6px;
+}
+/* HOOVER */
+.menu-text a:hover,
+.playlist li a:hover,
+.download p:hover,
+.main-content li a:hover,
+.song-info p:hover,
+.left .entity i:hover{
+    color: white;
+}
+
+.card .img:hover{
+    cursor: pointer;
+    position: relative;
+}
+
+.card .img img:hover{
+    opacity: 0.4;
+}
+
+.card .img:hover i{
+    display: block;
+    position: absolute;
+    color: white;
+    font-size: 3rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.song-info p:hover{
+    text-decoration: underline;
+}
+
+.header .btn:hover{
+    transform: scale(1.1);
+}
+
+.play-btn:hover{
+    transform: scale(1.2);
+}
+
+.line:hover .white-part{
+    background-color: #adff2f;
+}
+
+.line:hover .button{
+    display: block;
 }
