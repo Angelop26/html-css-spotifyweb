@@ -23,7 +23,7 @@ body{
     /* height: 100px; */
     /* margin: 10px; */
     /* debug */
-    background-color: cornflowerblue;
+    /* background-color: cornflowerblue; */
 }
 
 .mb-10{
@@ -36,6 +36,10 @@ body{
 
 .ml-10{
     margin-left: 10px;
+}
+
+.ml-20{
+    margin-left: 20px;
 }
 /* LAYOUT */
 .mc-wrapper{
@@ -57,7 +61,7 @@ a{
     height: calc(100% - 100px);
     /* debug */
     /* border: 1px solid yellow; */
-    background-color: yellow;
+    /* background-color: yellow; */
 }
 
 /* NAV LEFT */
@@ -66,9 +70,9 @@ a{
     height: 100%;
     flex-direction: column;
     justify-content: space-between;
+    background-color: black;
     /* debug */
     /* border: 1px solid blue; */
-    background-color: black;
 }
 
 .upper-part{
@@ -159,9 +163,9 @@ a{
     width: calc(100% - 200px);
     height: 100%;
     overflow-y: auto;
+    background-color: #141922;
     /* debug */
     /* border: 1px solid brown; */
-    background-color: #141922;
 }
 
 /* header */
@@ -227,9 +231,10 @@ a{
 .player{
     width: 100%;
     height: 100px;
+    background-color: #282828;
     /* debug */
     /* border: 1px solid aquamarine; */
-    background-color: aquamarine;
+    /* background-color: aquamarine; */
 }
 
 .section{
@@ -237,13 +242,86 @@ a{
 }
 .left,
 .right{
-    width: 150px;
+    width: 200px;
     /* debug */
-    background-color: chartreuse;
+    /* background-color: chartreuse; */
 }
 
 .md{
-    width: calc(100% - 300px);
+    width: calc(100% - 400px);
+    color: white;
     /* debug */
-    background-color: darkgoldenrod;
+    /* background-color: darkgoldenrod; */
+}
+
+.line{
+    height: 4px;
+    border-radius: 20px;
+    background-color: #717171;
+}
+
+.white-part{
+    width: 30%;
+    background-color: white;
+    height: 100%;
+    border-radius: 20px;
+}
+
+.button{
+    position: relative;
+    right: 100%;
+}
+/* left section */
+.left{
+    align-items: center;
+    justify-content: space-between;
+}
+.song{
+    align-items: center;
+    font-size: .8rem;
+}
+
+.song h4{
+    color: white;
+}
+
+.song p,
+.left .entity{
+    color: #717171;
+}
+.song img{
+    width: 60px;
+    height: 60px;
+    padding: 10px;
+}
+
+
+/* md section */
+.entity{
+    justify-content: center;
+}
+.md .entity{
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+
+.song-duration{
+    justify-content: center;
+    gap: 15px;
+    align-items: center;
+}
+.time{
+    width: 50%;
+    /* margin: 0 auto; */
+}
+/* right section */
+.right{
+    align-items: center;
+    font-size: .8rem;
+    gap: 10px;
+    color: white;
+}
+
+.sound{
+    width: 50%;
 }
